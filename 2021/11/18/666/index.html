@@ -1,0 +1,1789 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="计算机网络综合布线实施, luck.">
+    <meta name="description" content="123">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>计算机网络综合布线实施 | luck.</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">luck.</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">luck.</div>
+        <div class="logo-desc">
+            
+            123
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">计算机网络综合布线实施</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%80%83%E7%82%B9/">
+                                <span class="chip bg-color">考点</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%80%83%E7%BA%B2/">
+                                <span class="chip bg-color">考纲</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                计算机
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-11-18
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p><strong>一、单项选择题</strong></p>
+<p>1．设备间里的最高温度不能超过摄氏（   ）度。</p>
+<p>A．30</p>
+<p>B．20 </p>
+<p>C．40</p>
+<p>D．35</p>
+<p>答案：A</p>
+<p>2．根据设计等级估算，对于基本型设计方案每（   ）平方米设置一个信息插座</p>
+<p>A．40</p>
+<p>B．30</p>
+<p>C．20</p>
+<p>D．10</p>
+<p>答案：B</p>
+<p>3．六类双绞线电缆最高频率带宽为（   ）</p>
+<p>A．250MHz</p>
+<p>B．200MHz</p>
+<p>C．600MHz</p>
+<p>D．100MHz</p>
+<p>答案：D</p>
+<p>4．综合布线的拓扑结构为（   ）   </p>
+<p>A．树型</p>
+<p>B．环型</p>
+<p>C．星型 </p>
+<p>D．总线型 </p>
+<p>答案：C</p>
+<p>5．“3A”智能建筑3A指的是（   ）</p>
+<p>A．BA CA OA</p>
+<p>B．FA BA DA</p>
+<p>C．BA CA FA</p>
+<p>D．MA OA TA</p>
+<p>答案：A</p>
+<p>6．有线通信是利用（   ）来充当传输导体的</p>
+<p>A．红外线</p>
+<p>B．铜缆或光缆</p>
+<p>C．卫星</p>
+<p>D．电磁波</p>
+<p>答案：B</p>
+<p>7．有线通信是利用（   ）来充当传输导体的。</p>
+<p>A．电磁波</p>
+<p>B．卫星</p>
+<p>C．红外线</p>
+<p>D．铜缆或光缆</p>
+<p>答案：D</p>
+<p>8．六类双绞线电缆最高频率带宽为（   ）</p>
+<p>A．100MHz   </p>
+<p>B．200MHz</p>
+<p>C．600MHz</p>
+<p>D．250MHz</p>
+<p>答案：A</p>
+<p>9．综合布线系统中用于连接楼层配线间和设备间的子系统是（   ）  </p>
+<p>A．干线子系统</p>
+<p>B．水平子系统</p>
+<p>C．管理子系统</p>
+<p>D． 工作区子系统 </p>
+<p>答案：A</p>
+<p>10．常见的62.5/125μm多模光纤中的62.5μm指的是（   ）</p>
+<p>A．纤芯外径</p>
+<p>B．包层后外径</p>
+<p>C．包层厚度</p>
+<p>D．涂覆层厚度</p>
+<p>答案：A</p>
+<p>11．双绞线电缆型式代码表示法中最后一位表示的是（   ） </p>
+<p>A． 绝缘代号</p>
+<p>B．护套代号</p>
+<p>C．派生代号（频率/阻抗）</p>
+<p>D．导体代号 </p>
+<p>答案：C</p>
+<p>12．双绞线电缆根据是否有屏蔽层分为（   ）</p>
+<p>A．FTP UTP</p>
+<p>B．STP-a FTP </p>
+<p>C．FTP ScTP            </p>
+<p>D．STP UTP             </p>
+<p>答案：D</p>
+<p>13．10Base2中，10代表（   ）</p>
+<p>A．10MHZ</p>
+<p>B．10Mbps          </p>
+<p>C．10小时</p>
+<p>D．10Mp    </p>
+<p>答案：B</p>
+<p>14．常见的62.5/125μm多模光纤中的62.5μm指的是（   ）     </p>
+<p>A．包层后外径</p>
+<p>B．包层厚度</p>
+<p>C．纤芯外径  </p>
+<p>D．涂覆层厚度</p>
+<p>答案：C</p>
+<p>15．水平子系统通常不能超过（   ）米。</p>
+<p>A．110</p>
+<p>B．80</p>
+<p>C．70</p>
+<p>D．90</p>
+<p>答案：D</p>
+<p>16．综合布线系统的工作区，如果使用 4 对非屏蔽双绞线电缆作为传输介质，则信息插座与计算机终端设备的距离一般应保持在（   ）以内</p>
+<p>A．100m</p>
+<p>B．5m   </p>
+<p>C．90m </p>
+<p>D．2m  </p>
+<p>答案：B</p>
+<p>17．多模光纤采用的是哪种光源（   ） </p>
+<p>A．红外线</p>
+<p>B．蓝光</p>
+<p>C．LED</p>
+<p>D．激光</p>
+<p>答案：C</p>
+<p>18．宽带同轴电缆阻抗是（   ）欧，基带同轴电缆阻抗是（   ）欧。</p>
+<p>A．50 75 </p>
+<p>B．60 50</p>
+<p>C． 75 60  </p>
+<p>D．75 50</p>
+<p>答案：D</p>
+<p>19．综合布线采用单独接地系统时，一般采用（   ）</p>
+<p>A．混合接地体</p>
+<p>B．人工接地体</p>
+<p>C．自然接地体</p>
+<p>D．零线接地</p>
+<p>答案：B</p>
+<p>20．1000base-t 是基于四对双绞线（   ）运行的网络</p>
+<p>A．全双工模式</p>
+<p>B．半双工模式    </p>
+<p>C．全速模式</p>
+<p>D．单工模式     </p>
+<p>答案：A</p>
+<p>21．单模光纤的光源为（   ）</p>
+<p>A．发光三极管</p>
+<p>B．太阳能</p>
+<p>C．发光二极管  </p>
+<p>D．激光器</p>
+<p>答案：D</p>
+<p>22．“3A”智能建筑3A指的是（   ）</p>
+<p>A．BA CA FA</p>
+<p>B．FA BA DA</p>
+<p>C．MA OA TA</p>
+<p>D．BA CA OA </p>
+<p>答案：D</p>
+<p>23．宽带同轴电缆（粗缆）最大干线长度为（   ）米。</p>
+<p>A．2500</p>
+<p>B．185</p>
+<p>C．500</p>
+<p>D．925</p>
+<p>答案：C</p>
+<p>24．CD到BD的设计距离一般不超过（   ）米</p>
+<p>A．500  </p>
+<p>B．180</p>
+<p>C．1500</p>
+<p>D．80</p>
+<p>答案：C</p>
+<p>25．水平子系统通常不能超过（   ）米</p>
+<p>A．70</p>
+<p>B．90</p>
+<p>C．110</p>
+<p>D．80 </p>
+<p>答案：B</p>
+<p>26．在综合布线系统结构中，CD代表（   ）</p>
+<p>A．建筑群配线架</p>
+<p>B．建筑物配线架           </p>
+<p>C．楼层配线架           </p>
+<p>D．通信引出端</p>
+<p>答案：A</p>
+<p>27．在综合布线系统结构中，CD代表（   ）</p>
+<p>A．建筑物配线架</p>
+<p>B．建筑群配线架</p>
+<p>C．通信引出端</p>
+<p>D．楼层配线架</p>
+<p>答案：B</p>
+<p>28．设备间里的最高温度不能超过摄氏（  ）度。</p>
+<p>A．40</p>
+<p>B．30</p>
+<p>C．20</p>
+<p>D．35</p>
+<p>答案：B</p>
+<p>29．在综合布线工程中所用到的信息模块要有一定的余量，一般要占到总需求量的（   ）</p>
+<p>A．3%</p>
+<p>B．7%</p>
+<p>C．5%</p>
+<p>D．1%</p>
+<p>答案：A</p>
+<p>30．综合布线能使 （   ）、（   ）图像设备和交换设备与其它信息管理系统彼此相连，也能使这些设备与外部通信网络相连接</p>
+<p>A．语音、视频</p>
+<p>B．视频、数据</p>
+<p>C．语音、数据 </p>
+<p>D．射频、视频</p>
+<p>答案：C</p>
+<p>31．TIA/EIA568A要求100 MHZ下SRL为（   ）DB。</p>
+<p>A．32</p>
+<p>B．16 </p>
+<p>C．8</p>
+<p>D．64  </p>
+<p>答案：B</p>
+<p>32．568A和568B线序标准由（   ）制定的。</p>
+<p>A．ANSI/TIA/EIA </p>
+<p>B．SAC</p>
+<p>C．TIA/EIA</p>
+<p>D．ANSI </p>
+<p>答案：A</p>
+<p>33．CD到BD的设计距离一般不超过（   ）米</p>
+<p>A．80</p>
+<p>B．1500   </p>
+<p>C．180</p>
+<p>D．500   </p>
+<p>答案：B</p>
+<p>34．3A” 智能建筑是指智能大厦具有（   ）功能</p>
+<p>A．办公自动化、通信自动化和防火自动化</p>
+<p>B．办公自动化、通信自动化和楼宇自动化</p>
+<p>C．保安自动化、通信自动化和楼宇自动化</p>
+<p>D．办公自动化、楼宇自动化和防火自动化</p>
+<p>答案：B</p>
+<p>35．制作布线标记要有（   ）年以上保质期。</p>
+<p>A．10</p>
+<p>B．15</p>
+<p>C．5</p>
+<p>D．20</p>
+<p>答案：A</p>
+<p>36． 双绞线电缆根据是否有屏蔽层分为（   ）</p>
+<p>A．FTP ScTP</p>
+<p>B．STP-a FTP</p>
+<p>C．FTP UTP</p>
+<p>D．STP UTP</p>
+<p>答案：D</p>
+<p>37．以下（   ）是欧洲的布线标准</p>
+<p>A．GB/T 50311-2000 （国家标准）</p>
+<p>B．ISO/IEC 11801 (国际标准)</p>
+<p>C．EN50173</p>
+<p>D．TIA/EIA568B （美洲布线标准）</p>
+<p>答案：C</p>
+<p>38．在综合布线工程中所用到的信息模块要有一定的余量，一般要占到总需求量的（   ）</p>
+<p>A．7%        </p>
+<p>B．1%</p>
+<p>C．3% </p>
+<p>D．5% </p>
+<p>答案：C</p>
+<p>39．20毫米PVC管可容纳（   ）条双绞线。</p>
+<p>A．7</p>
+<p>B．5</p>
+<p>C．2</p>
+<p>D．3</p>
+<p>答案：D</p>
+<p>40．FD到BD的设计距离一般不超过（   ）米</p>
+<p>A．1500</p>
+<p>B．500  </p>
+<p>C．180 </p>
+<p>D． 80</p>
+<p>答案：B</p>
+<p>41．10Base2中，10代表（   ）</p>
+<p>A．10M</p>
+<p>B．10MHZ</p>
+<p>C．10Mbps</p>
+<p>D．10小时</p>
+<p>答案：C</p>
+<p>42．光纤的主要材质为（   ）</p>
+<p>A．铜</p>
+<p>B．水晶</p>
+<p>C．石英   </p>
+<p>D．碳酸钙 </p>
+<p>答案：C</p>
+<p>43．在综合布线系统中，建筑物干线电缆（光缆）的最大长度为（   ）</p>
+<p>A．500</p>
+<p>B．1500   </p>
+<p>C．800</p>
+<p>D．900</p>
+<p>答案：A</p>
+<p>44．单模光纤的光源为（   ）</p>
+<p>A．太阳能</p>
+<p>B．发光三极管</p>
+<p>C．激光器</p>
+<p>D．发光二极管</p>
+<p>答案：C</p>
+<p>45．宽带同轴电缆（粗缆）每条干线支持的最大节点数为（   ）</p>
+<p>A．50</p>
+<p>B．30</p>
+<p>C．100</p>
+<p>D．70 </p>
+<p>答案：C</p>
+<p>46．网络综合布线施工前准备工作包括硬件准备和（   ）两种。</p>
+<p>A．现场勘察</p>
+<p>B．材料准备</p>
+<p>C．软件准备</p>
+<p>D．工具准备</p>
+<p>答案：C</p>
+<p>47．以下布线方法中（   ）不是建筑物内水平双绞线的布线方法</p>
+<p>A．暗道布线</p>
+<p>B．向上牵引</p>
+<p>C．吊顶内布线</p>
+<p>D．墙壁线槽</p>
+<p>答案：B</p>
+<p>48．由于通信电缆的特殊结构，电缆在布放过程中承受的拉力不要超过电缆允许张力的80%。下面关于电缆最大允许拉力值正确的有（   ）</p>
+<p>A．3根4对双绞线电缆, 拉力为15kg</p>
+<p>B． n根4对双绞线电缆，拉力为(n×5+5)kg</p>
+<p>C．2根4对双绞线电缆, 拉力为10kg</p>
+<p>D．1根4对双绞线电缆, 拉力为5kg </p>
+<p>答案：B</p>
+<p>49．常见的62.5/125μm多模光纤中的62.5μm指的是 （   ）   </p>
+<p>A．包层后外径</p>
+<p>B．纤芯外径  </p>
+<p>C．包层厚度</p>
+<p>D．涂覆层厚度</p>
+<p>答案：B</p>
+<p>50．综合布线系统中直接与用户终端设备相连的子系统是（   ）    </p>
+<p>A．干线子系统</p>
+<p>B．水平子系统</p>
+<p>C．管理子系统</p>
+<p>D．工作区子系统</p>
+<p>答案：D</p>
+<p>51． 以下布线方法中，（   ）不是建筑物内水平双绞线的布线方法</p>
+<p>A．暗道布线     </p>
+<p>B．向上牵引</p>
+<p>C．墙壁线槽</p>
+<p>D．吊顶内布线</p>
+<p>答案：B</p>
+<p>52．1000base-t 是基于四对双绞线（   ）运行的网络。</p>
+<p>A．全双工模式</p>
+<p>B．单工模式 </p>
+<p>C．全速模式</p>
+<p>D．半双工模式</p>
+<p>答案：A</p>
+<p>53．人工接地体接地电阻不应大于（   ）欧。</p>
+<p>A．10</p>
+<p>B．40</p>
+<p>C．30</p>
+<p>D．20</p>
+<p>答案：B</p>
+<p>54．双绞线可分为STP 和（   ）两种</p>
+<p>A．NSTP </p>
+<p>B．UTP</p>
+<p>C．NUTP </p>
+<p>D．USTP</p>
+<p>答案：B</p>
+<p>55．综合布线系统的使用寿命要求在（   ）年内</p>
+<p>A．100</p>
+<p>B．15  </p>
+<p>C．30</p>
+<p>D．16  </p>
+<p>答案：D</p>
+<p>56．光纤的主要材质为（   ）</p>
+<p>A．石英</p>
+<p>B．水晶</p>
+<p>C．碳酸钙</p>
+<p>D．铜</p>
+<p>答案：A</p>
+<p>57．跳线有铜跳线和（   ）两种。</p>
+<p>A．光纤跳线</p>
+<p>B．双绞线跳线</p>
+<p>C．同轴电缆跳线</p>
+<p>D．铝跳线 </p>
+<p>答案：A</p>
+<p>58．建筑物金属体做接地装置时接地电阻不应大于（   ）欧</p>
+<p>A．10</p>
+<p>B．5</p>
+<p>C．7</p>
+<p>D．1</p>
+<p>答案：D</p>
+<p>59．双绞线电缆根据是否有屏蔽层分为（   ）</p>
+<p>A．STP UTP</p>
+<p>B．STP-a FTP</p>
+<p>C．FTP ScTP</p>
+<p>D．FTP UTP</p>
+<p>答案：A</p>
+<p>60．设备间里的最高温度不能超过摄氏（   ）度</p>
+<p>A．35</p>
+<p>B．40</p>
+<p>C．30</p>
+<p>D．20       </p>
+<p>答案：C</p>
+<p>61．微波系统的工作方式有（   ）和卫星微波两种。</p>
+<p>A．激光微波</p>
+<p>B．红外微波</p>
+<p>C．无线微波</p>
+<p>D．地面微波</p>
+<p>答案：D</p>
+<p>62．设备间里的最高温度不能超过摄氏（  ）度。</p>
+<p>A．30</p>
+<p>B．40</p>
+<p>C．20</p>
+<p>D．35</p>
+<p>答案：A</p>
+<p>63．光纤可分为SMF和（   ）两种。</p>
+<p>A．SNF</p>
+<p>B．MMF</p>
+<p>C．MNF</p>
+<p>D．SMF</p>
+<p>答案：B</p>
+<p>64．以下（   ）是欧洲的布线标准</p>
+<p>A．ISO/IEC 11801</p>
+<p>B．GB/T 50311-2000</p>
+<p>C．TIA/EIA568B</p>
+<p>D．EN50173 </p>
+<p>答案：D</p>
+<p>65． 电源系统分项工程质量验收要求机架组装紧固且水平度和垂直度偏差小于等于（   ）%</p>
+<p>A．15</p>
+<p>B．10</p>
+<p>C．20</p>
+<p>D．17</p>
+<p>答案：A</p>
+<p>66．永久链路全长小于等于（   ）  </p>
+<p>A．94</p>
+<p>B．99</p>
+<p>C．90</p>
+<p>D．100</p>
+<p>答案：C</p>
+<p><strong>二、多项选择题</strong></p>
+<p>1．常用的光纤连接器有（     ）</p>
+<p>A．UC</p>
+<p>B．SC </p>
+<p>C．UTP </p>
+<p>D．ST</p>
+<p>答案：D,B</p>
+<p>2．水平干线子系统的设计涉及到水平子系统的传输介质和部件集成，所以要考虑：（     ）</p>
+<p>A．确定信息插座数量</p>
+<p>B．确定线路走向</p>
+<p>C．确定线缆、槽、管的数量和类型</p>
+<p>D．确定电缆的类型和长度</p>
+<p>答案：B,C,D</p>
+<p>3．以下那些子系统属于智能建筑结构（     ）</p>
+<p>A．消防自动化系统           </p>
+<p>B．通信自动化系统</p>
+<p>C．楼宇自动化系统</p>
+<p>D．办公自动系统          </p>
+<p>答案：A,C,D,B</p>
+<p>4．屏蔽双绞线可分为（     ）</p>
+<p>A．SSTP</p>
+<p>B． FTP </p>
+<p>C．SFTP</p>
+<p>D．UTP</p>
+<p>答案：B,C,A</p>
+<p>5．以下哪些是无线通信介质（     ） </p>
+<p>A．微波</p>
+<p>B．激光</p>
+<p>C．红外线 </p>
+<p>D．紫外线</p>
+<p>答案：A,C,B</p>
+<p>6．智能大厦必备条件（     ）</p>
+<p>A．通讯自动化系统</p>
+<p>B．安保自动化系统</p>
+<p>C．消防自动化系统</p>
+<p>D．办公自动化系统</p>
+<p>答案：A,B,C,D</p>
+<p>7．以下那几种业务属于综合布线系统用户需求分析范围（     ）</p>
+<p>A．语音、数据</p>
+<p>B．图像 </p>
+<p>C．交通、物流 </p>
+<p>D．消防系统</p>
+<p>答案：A,B,D</p>
+<p>8．以下那几种业务属于综合布线系统用户需求分析范围（     ）</p>
+<p>A．消防系统</p>
+<p>B．交通、物流</p>
+<p>C．语音、数据</p>
+<p>D．图像 </p>
+<p>答案：C,D,A</p>
+<p>9．光纤的通信优点有（     ）</p>
+<p>A．传输距离远</p>
+<p>B．抗电磁干扰性好 </p>
+<p>C．数据安全性高</p>
+<p>D．传输速率高</p>
+<p>答案：B,D,A,C</p>
+<p>10．光纤通信系统包括下列哪些部件（     ）</p>
+<p>A．光发送机</p>
+<p>B．光纤</p>
+<p>C．光源</p>
+<p>D．光接收机</p>
+<p>答案：C,B,A,D</p>
+<p>11．以下布线方法中，（     ）是建筑物内水平双绞线的布线方法。</p>
+<p>A．吊顶内布线 </p>
+<p>B．暗道布线 </p>
+<p>C．向上牵引 </p>
+<p>D．墙壁线槽</p>
+<p>答案：B,A,D</p>
+<p>12．垂直干线子系统的布线通道可采用（     ）方法</p>
+<p>A．电缆孔              </p>
+<p>B．电缆井            </p>
+<p>C．架空</p>
+<p>D．地板下</p>
+<p>答案：A,B</p>
+<p>13．综合布线中，防护措施有（     ）</p>
+<p>A．接地保护</p>
+<p>B．电气保护</p>
+<p>C．屏蔽保护</p>
+<p>D．防火保护</p>
+<p>答案：C,B,D</p>
+<p>14．数据通信方式包括（     ） </p>
+<p>A．单工通信方式</p>
+<p>B．半单工通信方式</p>
+<p>C．全双工通信方式</p>
+<p>D．半双工通信方式</p>
+<p>答案：A,D,C</p>
+<p>15．光纤的通信优点有（     ）</p>
+<p>A．传输速率高</p>
+<p>B．数据安全性高</p>
+<p>C．抗电磁干扰性好</p>
+<p>D．传输距离远</p>
+<p>答案：C,A,D,B</p>
+<p>16．综合布线工程用户需求分析对象为（     ）</p>
+<p>A．商用建筑</p>
+<p>B．智能小区</p>
+<p>C．智能建筑</p>
+<p>D．现代建筑</p>
+<p>答案：C,B</p>
+<p>17．垂直干线子系统的布线通道可采用（     ）方法</p>
+<p>A．电缆孔</p>
+<p>B．地板下</p>
+<p>C．电缆井</p>
+<p>D．架空</p>
+<p>答案：A,C</p>
+<p>18．单模光纤特性：（     ）</p>
+<p>A．宽芯线，聚光好</p>
+<p>B．用于高速度、长距离</p>
+<p>C．用于低速度、短距离</p>
+<p>D．耗散极小，高效</p>
+<p>答案：B,D</p>
+<p>19．一下那些子系统属于智能建筑结构（     ）</p>
+<p>A．系统集成中心</p>
+<p>B．楼宇自动化系统</p>
+<p>C．通信自动化系统</p>
+<p>D．办公自动系统 </p>
+<p>答案：A,B,D,C</p>
+<p>20．桥架按结构分为（     ）</p>
+<p>A．英式</p>
+<p>B．托盘式</p>
+<p>C．梯级式</p>
+<p>D．槽式</p>
+<p>答案：C,B,A</p>
+<p>21．设备间内线缆铺设方式有以下几种（     ）</p>
+<p>A．活动地板方式</p>
+<p>B．预埋管线方式</p>
+<p>C．地板和墙壁内沟槽方式</p>
+<p>D．机架走线架方式</p>
+<p>答案：A,C,D,B</p>
+<p>22．综合布线系统使用哪三种标记（     ）</p>
+<p>A．场标记 </p>
+<p>B． 电缆标记</p>
+<p>C．插入标记</p>
+<p>D．配线架标记</p>
+<p>答案：B,A,C</p>
+<p>23．综合布线施工过程中注意事项包括（     ）</p>
+<p>A．全面测试，保证质量</p>
+<p>B．协调进程，提高效率</p>
+<p>C．注意细枝末节，严密管理 </p>
+<p>D．及时检查，现场督导</p>
+<p>答案：D,C,B,A</p>
+<p>24．对于新建筑物水平子系统管线设计方案采用哪些基本类型（     ）</p>
+<p>A．直接埋管方式</p>
+<p>B．地面线槽方式</p>
+<p>C． 托架方式</p>
+<p>D．线槽支管方式</p>
+<p>答案：A,D,B</p>
+<p>25． 桥架按结构分为（     ）</p>
+<p>A．英式 </p>
+<p>B．梯级式       </p>
+<p>C．槽式</p>
+<p>D．托盘式</p>
+<p>答案：B,D,C</p>
+<p><strong>三、填空题</strong></p>
+<p>1．综合布线工程中常采用两种制图软件（___________)、（___________)</p>
+<p>答案：AutoCAD、Visio</p>
+<p>2．无线局域网的两个主要要素是（___________)和（___________)    </p>
+<p>答案：无限网卡、无线接入点</p>
+<p>3．综合布线是一种（___________)的，灵活性极高的建筑物内或建筑物群之间的（___________)。它既能使（___________)图像设备和交换设备与其他信息管理系统彼此相连，也能使这些设备与外部相连，它还包括建筑物到（___________)或电信线路上的（___________)与应用系统设备之间的所有（___________)及相关的(连接部件)</p>
+<p>答案：模块化、信息传输通道、语音数据、外部网络、连接点、线缆</p>
+<p>4．在综合布线设计中，干线子系统的接合方法有（___________)和（___________)两种</p>
+<p>答案：点对点端接法   分支接合法</p>
+<p>5．无线局域网的两个主要要素是（___________)和（___________)</p>
+<p>答案：无限网卡、无线接入点</p>
+<p>6．综合布线工程中常采用两种制图软件（___________)、（___________)</p>
+<p>答案：AutoCAD、Visio</p>
+<p>7．在我国常用的信息插座面板尺寸是（___________)×（___________)mm</p>
+<p>答案：86 × 86</p>
+<p>8．综合布线系统采用的主要布线部件有CD、BD、FD、TP、TO，它们分别表示：CD建筑群配线架、BD（___________)FD楼层配线架、TP（___________)TO信息插座（通信引出端）</p>
+<p>答案：建筑物配线架、水平电缆光缆和转接点、</p>
+<p>9．根据商业建筑物接地和接线要求的规定，综合布线系统接地的结构包括（___________)接地母线（___________)接地引入线、主接地母线、。</p>
+<p>答案：接地线与接地干线、自然和人体接地体</p>
+<p>10．多模光纤的纤芯标称直径为（___________)μm或（62.5/125）μm，其标称波长为 （___________)和1300nm</p>
+<p>答案：50/125、850nm</p>
+<p>11．1、根据国家标准GB/T50311-2000，综合布线系统可分为以下几个部分</p>
+<p>工作区；（___________)；干线（垂直）子系统；（___________)；设备间；（___________)</p>
+<p>答案：配线（水平）子系统；建筑群子系统；设备间；。</p>
+<p>12．综合布线工程验收分4个阶段：（___________)、（___________)、初步验收、竣工验收</p>
+<p>答案：开工前检查  随工验收</p>
+<p>13．综合布线工程中常采用两种制图软件（___________)、（___________)</p>
+<p>答案：AutoCAD、Visio</p>
+<p>14．计水平子系统时必须择优选择最佳的水平布线方案。一般可采用如下3种类型（___________)和（___________)先走吊顶内线槽。再走支管到信息出口的方式</p>
+<p>答案：直接埋管式  适合大开间及后打隔断的地面线槽方式</p>
+<p>15．布放双绞线电缆时，最大拉力不能超过（___________)公斤，速度不宜超过（___________)m/分钟</p>
+<p>答案：40，15</p>
+<p>16．综合布线系统采用的主要布线部件有CD、BD、FD、TP、TO，它们分别表示：CD建筑群配线架、BD（___________)FD楼层配线架、TP（___________)TO信息插座（通信引出端）</p>
+<p>答案：建筑物配线架、水平电缆光缆和转接点</p>
+<p>17．多模光纤的纤芯标称直径为（___________)μm或（62.5/125）μm，其标称波长为 （___________)和1300nm</p>
+<p>答案：50/125、850nm</p>
+<p>18．综合布线是一种（___________)的，灵活性极高的建筑物内或建筑物群之间的（___________)它既能使（___________)图像设备和交换设备与其他信息管理系统彼此相连，也能使这些设备与外部相连，它还包括建筑物到（___________)或电信线路上的（___________)与应用系统设备之间的所有()及相关的(连接部件)。</p>
+<p>答案：模块化、信息传输通道、语音数据、外部网络、连接点、线缆</p>
+<p>19．安装在墙上的信息插座，其位置宜高出地面（___________)mm左右，如房间采用活动地板</p>
+<p>时，信息插座应离活动地板地面为（___________)mm</p>
+<p>答案：300 300</p>
+<p><strong>四、简答题</strong></p>
+<p>1．简述光纤通信系统的组成。</p>
+<p>答案：光纤通信系统是以光纤为传输媒介，光波为载波的通信系统。主要由光发送机、光纤光缆、中继器和光接收机组成。光发送机的作用是将电信号转换为光信号，并将生成的光信号注入光纤。光发送机一般由驱动电路、光源和调制器构成，如果是直接强度调制可以省去调制器</p>
+<p>2．水平子系统设计中电缆长度的估算方法？</p>
+<p>答案：总长度=(A+B)/2<em>N</em>3.3*1.2</p>
+<p>其中:A代表最短信息点长度</p>
+<p>B代表最长信息点长度</p>
+<p>N,所有信息点个数</p>
+<p>1.2:富余量</p>
+<p>3．3将米换算成英尺</p>
+<p>3．体现了质量好的水晶头的特征</p>
+<p>答案：有明显的商标或标示         </p>
+<p>透明度高</p>
+<p>接触铜片颜色光亮、比较厚</p>
+<p>4．简述综合布线六大子系统各包含部位？</p>
+<p>答案：六大子系统包括：工作区子系统、水平干线子系统、管理子系统、垂直干线子系统、设备间子系统、建筑群干线子系统。</p>
+<p>工作区子系统：由用户工作区的信息插座以外延伸到工作站终端设备处的连接线缆和适配器等组成。</p>
+<p>水平干线子系统：每个楼层配线架至工作区信息插座之间的线缆、信息插座、转接点及配套设施组成。</p>
+<p>管理子系统：即管理间，用来连接水平和垂直干线系统的。</p>
+<p>垂直干线子系统：由管理间到设备间之间的线缆及配套设施组成。</p>
+<p>设备间子系统：即中央机房由设备室的电缆、连接器和相关支撑硬件组成。</p>
+<p>建筑群干线子系统：由楼群配线架他建筑物配线架之间的缆线及配套设施组成。</p>
+<p>5．光缆施工中应注意的问题有哪些？</p>
+<p>答案：光缆在室内布线时要走线槽。</p>
+<p>光缆在地下管道中穿过时要用PVC管</p>
+<p>光缆需要拐弯时，曲率半径不能小于20CM</p>
+<p>光缆的室外部分要加铁管保护，并固定牢固</p>
+<p>光缆不能拉的太紧或者松，要有一定的伸缩量</p>
+<p>埋地时要加铁管保护</p>
+<p>6．请简单介绍综合布线系统的组成和各子系统的功能(20分)</p>
+<p>答案：1. 结构化布线系统由工作区子系统、配线(水平)子系统、干线(垂直)子系统、设备间子系统、管理子系统、建筑群子系统六个子系统组成。</p>
+<p>\1. 建筑群子系统</p>
+<p>\2. 设备子系统</p>
+<p>\3. 垂直干线子系统</p>
+<p>\4. 管理子系统</p>
+<p>\5. 水平布线子系统</p>
+<p>\6. 工作区子系统</p>
+<p>各子系统所实现的功能如下：</p>
+<p>\1. 工作区子系统由配线（水平）布线系统的信息插座延伸到工作站终端设备处的连接电缆及适配器组成，每个工作区根据用户要求，设置一个电话机接口和1至2个计算机终端接口。</p>
+<p>\2. 配线（水平）子系统由工作区用的信息插座，每层配线设备至信息插座的配线电缆、楼层配线设备和跳线等组成。</p>
+<p>\3. 干线（垂直）子系统由设备间的配线设备和跳线，以及设备间至各楼层配线间的连接电缆组成。</p>
+<p>\4. 设备间子系统由综合布线系统的建筑物进线设备，电话、数据、计算机等各种主机设备及其保安配线设备等组成。</p>
+<p>\5. 管理子系统设置在每层配线设备的房间内，是由交接间的 配线设备，输入/输出设备等组成。</p>
+<p>\6. 建筑群子系统由二个及以上建筑物的电话、数据、电视系统组成一 个建筑群子系统，它是室外设备与室内网络设备的接口，它终结进入建 筑物的铜缆和/ 或光缆，提供避雷及电源超荷保护等</p>
+<p>7．举出线缆测试仪的基本功能。</p>
+<p>答案：   ① 测试距离</p>
+<p>② 测量衰减</p>
+<p>③ 近端串扰</p>
+<p>④ 噪声测试</p>
+<p>8．简述光纤通信系统的组成。</p>
+<p>答案：光纤通信系统是以光纤为传输媒介，光波为载波的通信系统。主要由光发送机、光纤光缆、中继器和光接收机组成。光发送机的作用是将电信号转换为光信号，并将生成的光信号注入光纤。光发送机一般由驱动电路、光源和调制器构成，如果是直接强度调制可以省去调制器</p>
+<p>9．水平干线子系统是从工作区的信息插座开始到管理间子系统的配线架，设计涉及到水平子系统的传输介质和部件集成，主要有以下几点：</p>
+<p>答案：① 确定线路走向。</p>
+<p>② 确定线缆、槽、管的数量和类型。</p>
+<p>③ 确定电缆的类型和长度。</p>
+<p>④ 订购电缆和线槽。</p>
+<p>⑤ 如果打吊杆走线槽，则需要用多少根吊杆。</p>
+<p>⑥ 如果不用吊杆走线槽，则需要用多少根托架。</p>
+<p>10．网络设计应该考虑的原则有哪些？</p>
+<p>答案：① 实用性</p>
+<p>② 性价比</p>
+<p>③ 稳定性/可靠性</p>
+<p>④ 可维护性</p>
+<p>⑤ 可扩展性</p>
+<p>⑥ 安全性</p>
+<p>11．网络设计应该考虑的原则有哪些？（5分）</p>
+<p>答案： ① 实用性</p>
+<p>② 性价比</p>
+<p>③ 稳定性/可靠性</p>
+<p>④ 可维护性</p>
+<p>⑤ 可扩展性</p>
+<p>⑥ 安全性</p>
+<p>12．简述568A和568B线序并说明什么是直通线，什么是交叉线？</p>
+<p>答案： 568A线序：由左至右为    绿白、绿、橙白、蓝、蓝白、橙、棕白、棕</p>
+<p>568B线序：由左至右为    橙白、橙、绿白、蓝、蓝白、绿、棕白、棕</p>
+<p>直通线就是线缆两端线序相同，同为568A或568B，而交叉线就是两端线序不同，一端为568A。另一端就是568B。</p>
+<p>13．简述布线工程管理的内容。</p>
+<p>答案：（1）现场调查与开工检查</p>
+<p>（2）工作任务分配</p>
+<p>（3）工作报告</p>
+<p>（4）返工通知</p>
+<p>（5）下一阶段施工单</p>
+<p>（6）现场存料</p>
+<p>（7）备忘录</p>
+<p>（8）测试报告</p>
+<p>（9）制作布线标记系统</p>
+<p>（10）验收并形成文档</p>
+<p>14．举出线缆测试仪的基本功能。</p>
+<p>答案：① 测试距离</p>
+<p>② 测量衰减</p>
+<p>③ 近端串扰</p>
+<p>④ 噪声测试</p>
+<p>15．已知平均走线长度为78英尺，要求140个I/O，现线缆采用1000英尺一箱的包装形式，问需要几箱线缆？</p>
+<p>答案： 1000÷78=12。8个走线单位/每箱（取12）</p>
+<p>140÷12=11。6≈12（箱）</p>
+<p>16．体现了质量好的水晶头的特征。</p>
+<p>答案： 1。有明显的商标或标示        2。 透明度高</p>
+<p>3。接触铜片颜色光亮、比较厚实  </p>
+<p>17．请简单介绍综合布线系统的组成和各子系统的功能。</p>
+<p>答案：结构化布线系统由工作区子系统、配线(水平)子系统、干线(垂直)子系统、设备间子系统、管理子系统、建筑群子系统六个子系统组成。</p>
+<p>\1. 工作区子系统由配线（水平）布线系统的信息插座延伸到工作站终端设备处的连接电缆及适配器组成，每个工作区根据用户要求，设置一个电话机接口和1至2个计算机终端接口。</p>
+<p>\2. 配线（水平）子系统由工作区用的信息插座，每层配线设备至信息插座的配线电缆、楼层配线设备和跳线等组成。</p>
+<p>\3. 干线（垂直）子系统由设备间的配线设备和跳线，以及设备间至各楼层配线间的连接电缆组成。</p>
+<p>\4. 设备间子系统由综合布线系统的建筑物进线设备，电话、数据、计算机等各种主机设备及其保安配线设备等组成。</p>
+<p>\5. 管理子系统设置在每层配线设备的房间内，是由交接间的 配线设备，输入/输出设备等组成。</p>
+<p>\6. 建筑群子系统由二个及以上建筑物的电话、数据、电视系统组成一 个建筑群子系统，它是室外设备与室内网络设备的接口，它终结进入建 筑物的铜缆和/ 或光缆，提供避雷及电源超荷保护等</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">王志远</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://wzy0411.github.io/2021/11/18/666/">https://wzy0411.github.io/2021/11/18/666/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">王志远</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%80%83%E7%82%B9/">
+                                    <span class="chip bg-color">考点</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%80%83%E7%BA%B2/">
+                                    <span class="chip bg-color">考纲</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/11/18/wzy0411/">
+                    <div class="card-image">
+                        
+                        <img src="https://z3.ax1x.com/2021/11/11/Iw207d.jpg" class="responsive-img" alt="计算机基础和发展时代的开始">
+                        
+                        <span class="card-title">计算机基础和发展时代的开始</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                    计算机
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">计算机基础</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/11/18/111111/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            王志远
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">王志远</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://wzy0411.github.io/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2751306785@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2751306785" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2751306785" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
